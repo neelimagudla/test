@@ -1,0 +1,15 @@
+<input
+   type='text'
+     (keyup)='search($event)'/> 
+    
+       <!-- <button (click)="search(input)">Search</button> -->
+ <ngx-datatable
+            #table
+            [columns]="columns"
+            [columnMode]="'force'"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            [rowHeight]="'auto'"
+            [limit]="10"
+            [rows]='rows'>
+  </ngx-datatable>
